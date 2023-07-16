@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>калькулятор расчёта стоимости автомобиля</h1>
+    <form>
+        <div>
+            <select
+              id="autoName"
+              name="autoName"
+            >
+              <option value="0" selected="selected">
+                Выбрать марку автомобиля
+              </option>
+              <option value="Reno">Reno</option>
+              <option value="Opel">Opel</option>
+              <option value="Mazda">Mazda</option>
+              <option value="Jaguar">Jaguar</option>
+            </select>
+        </div>
+        <div>
+            <select
+              id="autoModel"
+              name="autoModel"
+            >
+              <option value="0" selected="selected">
+                Выбрать модель автомобиля
+              </option>
+              <option value="Duster">Duster</option>
+              <option value="Logan">Logan</option>
+              <option value="Corsa">Corsa</option>
+              <option value="Astra">Astra</option>
+              <option value="CX5">CX5</option>
+              <option value="CX7">CX7</option>
+              <option value="E-Pace">E-Pace</option>
+              <option value="S-Type">S-Type</option>
+            </select>
+        </div>
+        <div>
+            <label>Тип топлива</label>
+                  <div id="calculator_fueltype">
+                <div class="radio">
+                                     <input
+                      type="radio"
+                      id="calculator_fueltype_0"
+                      name="calculator[fueltype]"
+                      value="petrol"
+                      checked="checked"
+                    />
+                    бензин</label
+                  >
+                </div>
+                <div class="radio">
+                    <input
+     type="radio"
+     id="calculator_fueltype_1"
+     name="calculator[fueltype]"
+     value="petrol"
+     checked="checked"
+   />
+   дизель</label
+ >
+</div>
+<div class="radio">
+    <input
+type="radio"
+id="calculator_fueltype_2"
+name="calculator[fueltype]"
+value="petrol"
+checked="checked"
+/>
+газ</label
+>
+</div>
+<div class="radio">
+    <input
+type="radio"
+id="calculator_fueltype_3"
+name="calculator[fueltype]"
+value="petrol"
+checked="checked"
+/>
+электричество</label
+>
+</div>
+</div>
+</div>
+         <div>
+            <input type="number" placeholder="Введите объем двигателя">
+         </div>   
+
+         <div>
+            <label>Состояние автомобиля</label>
+                  <div id="condition">
+                <div class="radio">
+                                     <input
+                      type="radio"
+                      id="condition_0"
+                      name="condition"
+                   checked="checked"
+                    />
+                    новый
+                </div>
+                <div class="radio">
+                    <input
+     type="radio"
+     id="condition_0"
+     name="condition"
+  
+   />
+   подержанный
+</div>
+                
+</div>
+</div>
+<div>
+    <label>Способ оплаты</label>
+          <div id="payment">
+        <div class="check">
+                             <input
+              type="checkbox"
+              id="payment1"
+              name="payment"
+           checked="checked"
+            />
+            картой
+        </div>
+        <div class="check">
+            <input
+type="checkbox"
+id="payment1"
+name="payment"
+
+/>
+наличными
+</div>
+        
+</div>
+</div>
+            <button type="submit" >Рассчитать итоговую стоимость</button>
+         
+    </form>
+    <script src="./index.js"></script>
+  </body>
+</html>
+
+<!-- Напишите калькулятор расчёта стоимости автомобиля в зависимости от комплектации. 
+
+- Должен содержать поля:
+- выпадающий список с маркой автомобиля (Reno, Opel, Mazda, Jaguar);
+- выпадающий список с моделью автомобиля;
+- чекбокс или радиокнопка для выбор топлива (бензин, дизель, газ, электричество)
+- инпут для ввода объёма двигателя (от 1.1 литра до 3.5 литров);
+- чекбокс или радиокнопка для выбора состояния автомобиля (новый, подержанный);
+- если автомобиль подержанный, то появляется чекбокс или радиокнопка с количеством владельцев (1-2 владельца, более 3х);
+- чекбокс или радиокнопка для выбора способа оплаты (картой, наличными, счёт на юридическое лицо;
+- можете добавить дополнительные поля по своему желанию.
+- Выбор того или иного элемента должен влиять на результирующую цену
+
+Пример подобного калькулятора с сайта [https://www.japantrek.ru/calculator](https://www.japantrek.ru/calculator), но мы уверены, что вы можете сделать лучше!
+Или вот ещё один пример отсюда https://cena-auto.ru/calculator/ -->
