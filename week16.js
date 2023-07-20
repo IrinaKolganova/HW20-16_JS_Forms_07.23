@@ -5,7 +5,7 @@
 const paragraph = document.getElementById('practicum');
 
 function makeOne() {
-	//Ваш код
+	console.log(document.forms.length);
 }
 
 document.querySelector('.b-1').onclick = makeOne;
@@ -17,10 +17,12 @@ document.querySelector('.b-1').onclick = makeOne;
 const paragraphTwo = document.getElementById('practicum2');
 
 function makeTwo() {
-	//Ваш код
+	let Two = document.getAttribute('name');
+	console.log(Two);
 }
 
 document.querySelector('.b-2').onclick = makeTwo;
+//???Не поняла, каким образом тут можно использовать метод getAttribute???
 
 //Задание 3
 //Найдите последнюю форму на странице. При нажатии на кнопку выведите значение атрибута "name" этой формы.
@@ -33,6 +35,7 @@ function makeThree() {
 }
 
 document.querySelector('.b-3').onclick = makeThree;
+
 
 //Задание 4
 //Найдите все формы на странице и выведите их названия
@@ -286,9 +289,9 @@ formOne.addEventListener('submit', function (event) {
 //const emailInput = //Ваш код
 const errorMessage = document.getElementById('errorMessage');
 
-emailInput.oninput = function () {
-	//Ваш код
-};
+//emailInput.oninput = function () {
+//Ваш код
+//};
 
 //Задание 21
 //При отправке второй формы выполняется проверка всех чекбоксов. Если ни один из чекбоксов не выбран, отмените отправку формы и выведите сообщение об ошибке в элементе с id "result21".
@@ -383,21 +386,21 @@ selectFormThree.addEventListener('change', function () {
 //Задание 29
 //При заполнении всех полей третьей формы выведите их значения в консоль. Используйте JavaScript без использования объекта FormData.
 
-const formThree = document.forms.formThree;
-const nameInputThree = form.elements.thirdName;
-const emailInputThree = form.elements.thirdEmail;
+// const formThree = document.forms.formThree;
+// const nameInputThree = form.elements.thirdName;
+// const emailInputThree = form.elements.thirdEmail;
 
-function handleSubmitTwentyNine(event) {
-	event.preventDefault();
+// function handleSubmitTwentyNine(event) {
+// 	event.preventDefault();
 
-	if (nameInputThree.value && emailInputThree.value) {
-		//Ваш код
-	} else {
-		console.log('Пожалуйста, заполните все поля формы.');
-	}
-}
+// 	if (nameInputThree.value && emailInputThree.value) {
+// 		//Ваш код
+// 	} else {
+// 		console.log('Пожалуйста, заполните все поля формы.');
+// 	}
+// }
 
-formThree.addEventListener('submit', handleSubmitTwentyNine);
+// formThree.addEventListener('submit', handleSubmitTwentyNine);
 
 //Задание 30
 //При отправке второй формы выведите значения выбранных вариантов в консоль
